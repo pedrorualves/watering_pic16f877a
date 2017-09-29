@@ -11,10 +11,6 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\rs\AppData\Local\Temp\so0.obj
-reset_vec CODE 0 0 0 3 2
-end_init CODE 0 12 12 3 2
-config CONFIG 0 2007 2007 1 2
 $dist/default/production\WateringSystem.X.production.obj
 cinit CODE 0 15 15 13 2
 text1 CODE 0 70 70 42 2
@@ -36,6 +32,10 @@ bssBANK0 BANK0 1 20 20 2E 1
 strings STRING 0 B2 B2 3D 2
 clrtext CODE 0 1C8 1C8 8 2
 bssCOMMON COMMON 1 70 70 9 1
+$C:\Users\rs\AppData\Local\Temp\satk.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -82,20 +82,20 @@ STRING 1D4-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\WateringSystem.X.production.obj
-15 cinit CODE >374:C:\Users\rs\AppData\Local\Temp\so0.
-15 cinit CODE >377:C:\Users\rs\AppData\Local\Temp\so0.
-15 cinit CODE >454:C:\Users\rs\AppData\Local\Temp\so0.
-16 cinit CODE >455:C:\Users\rs\AppData\Local\Temp\so0.
-17 cinit CODE >456:C:\Users\rs\AppData\Local\Temp\so0.
-18 cinit CODE >457:C:\Users\rs\AppData\Local\Temp\so0.
-1D cinit CODE >460:C:\Users\rs\AppData\Local\Temp\so0.
-1E cinit CODE >461:C:\Users\rs\AppData\Local\Temp\so0.
-1F cinit CODE >462:C:\Users\rs\AppData\Local\Temp\so0.
-20 cinit CODE >463:C:\Users\rs\AppData\Local\Temp\so0.
-21 cinit CODE >464:C:\Users\rs\AppData\Local\Temp\so0.
-24 cinit CODE >470:C:\Users\rs\AppData\Local\Temp\so0.
-24 cinit CODE >472:C:\Users\rs\AppData\Local\Temp\so0.
-25 cinit CODE >473:C:\Users\rs\AppData\Local\Temp\so0.
+15 cinit CODE >374:C:\Users\rs\AppData\Local\Temp\satk.
+15 cinit CODE >377:C:\Users\rs\AppData\Local\Temp\satk.
+15 cinit CODE >454:C:\Users\rs\AppData\Local\Temp\satk.
+16 cinit CODE >455:C:\Users\rs\AppData\Local\Temp\satk.
+17 cinit CODE >456:C:\Users\rs\AppData\Local\Temp\satk.
+18 cinit CODE >457:C:\Users\rs\AppData\Local\Temp\satk.
+1D cinit CODE >460:C:\Users\rs\AppData\Local\Temp\satk.
+1E cinit CODE >461:C:\Users\rs\AppData\Local\Temp\satk.
+1F cinit CODE >462:C:\Users\rs\AppData\Local\Temp\satk.
+20 cinit CODE >463:C:\Users\rs\AppData\Local\Temp\satk.
+21 cinit CODE >464:C:\Users\rs\AppData\Local\Temp\satk.
+24 cinit CODE >470:C:\Users\rs\AppData\Local\Temp\satk.
+24 cinit CODE >472:C:\Users\rs\AppData\Local\Temp\satk.
+25 cinit CODE >473:C:\Users\rs\AppData\Local\Temp\satk.
 4 intentry CODE >269:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
 179 text10 CODE >269:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
 179 text10 CODE >272:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
@@ -196,16 +196,16 @@ AF text1 CODE >353:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
 68 maintext CODE >154:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
 6A maintext CODE >158:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
 6F maintext CODE >128:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
-1C8 clrtext CODE >441:C:\Users\rs\AppData\Local\Temp\so0.
-1C8 clrtext CODE >442:C:\Users\rs\AppData\Local\Temp\so0.
-1C9 clrtext CODE >443:C:\Users\rs\AppData\Local\Temp\so0.
-1C9 clrtext CODE >444:C:\Users\rs\AppData\Local\Temp\so0.
-1CA clrtext CODE >445:C:\Users\rs\AppData\Local\Temp\so0.
-1CB clrtext CODE >446:C:\Users\rs\AppData\Local\Temp\so0.
-1CC clrtext CODE >447:C:\Users\rs\AppData\Local\Temp\so0.
-1CD clrtext CODE >448:C:\Users\rs\AppData\Local\Temp\so0.
-1CE clrtext CODE >449:C:\Users\rs\AppData\Local\Temp\so0.
-1CF clrtext CODE >450:C:\Users\rs\AppData\Local\Temp\so0.
+1C8 clrtext CODE >441:C:\Users\rs\AppData\Local\Temp\satk.
+1C8 clrtext CODE >442:C:\Users\rs\AppData\Local\Temp\satk.
+1C9 clrtext CODE >443:C:\Users\rs\AppData\Local\Temp\satk.
+1C9 clrtext CODE >444:C:\Users\rs\AppData\Local\Temp\satk.
+1CA clrtext CODE >445:C:\Users\rs\AppData\Local\Temp\satk.
+1CB clrtext CODE >446:C:\Users\rs\AppData\Local\Temp\satk.
+1CC clrtext CODE >447:C:\Users\rs\AppData\Local\Temp\satk.
+1CD clrtext CODE >448:C:\Users\rs\AppData\Local\Temp\satk.
+1CE clrtext CODE >449:C:\Users\rs\AppData\Local\Temp\satk.
+1CF clrtext CODE >450:C:\Users\rs\AppData\Local\Temp\satk.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -235,21 +235,21 @@ _INTF 59 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 _T0IE 5D 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 _T0IF 5A 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 _TMR0 1 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\rs\AppData\Local\Temp\so0.obj
+___sp 0 0 STACK 2 stack C:\Users\rs\AppData\Local\Temp\satk.obj
 _main 50 0 CODE 0 maintext dist/default/production\WateringSystem.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
-start 24 0 CODE 0 init C:\Users\rs\AppData\Local\Temp\so0.obj
+start 24 0 CODE 0 init C:\Users\rs\AppData\Local\Temp\satk.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
 __end_of_LedProcess 2B4 0 CODE 0 text5 dist/default/production\WateringSystem.X.production.obj
 _timer20ms 40 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\satk.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\satk.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\satk.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\satk.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\satk.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\satk.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -275,7 +275,7 @@ __end_of_MENU_MANUAL 1B0 0 STRING 0 strings dist/default/production\WateringSyst
 clear_ram0 390 0 CODE 0 clrtext dist/default/production\WateringSystem.X.production.obj
 __pcstackBANK0 58 0 BANK0 1 cstackBANK0 dist/default/production\WateringSystem.X.production.obj
 __size_of_SoftwareConfiguration 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\rs\AppData\Local\Temp\so0.obj
+___int_sp 0 0 STACK 2 stack C:\Users\rs\AppData\Local\Temp\satk.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -342,7 +342,7 @@ __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 8 0 CODE 0 intentry -
 __stringtab 164 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
 _ProcessWATERINGStates 32E 0 CODE 0 text3 dist/default/production\WateringSystem.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\rs\AppData\Local\Temp\so0.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\rs\AppData\Local\Temp\satk.obj
 _InitExternal_INT 37C 0 CODE 0 text6 dist/default/production\WateringSystem.X.production.obj
 _menuSTATES 76 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
@@ -360,8 +360,8 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 __size_of_InitTimer0 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
 _UpdateTimeCounters E0 0 CODE 0 text1 dist/default/production\WateringSystem.X.production.obj
-stackhi 0 0 ABS 0 - C:\Users\rs\AppData\Local\Temp\so0.obj
-stacklo 0 0 ABS 0 - C:\Users\rs\AppData\Local\Temp\so0.obj
+stackhi 0 0 ABS 0 - C:\Users\rs\AppData\Local\Temp\satk.obj
+stacklo 0 0 ABS 0 - C:\Users\rs\AppData\Local\Temp\satk.obj
 __end_of_HardwareConfiguration 2F2 0 CODE 0 text9 dist/default/production\WateringSystem.X.production.obj
 __end_of__stringtab 170 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
