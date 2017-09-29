@@ -1,0 +1,457 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\rs\AppData\Local\Temp\so0.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\WateringSystem.X.production.obj
+cinit CODE 0 15 15 13 2
+text1 CODE 0 70 70 42 2
+text2 CODE 0 EF EF 3B 2
+text3 CODE 0 197 197 10 2
+text4 CODE 0 1A7 1A7 C 2
+text5 CODE 0 12A 12A 30 2
+text6 CODE 0 1BE 1BE A 2
+text7 CODE 0 1D0 1D0 4 2
+text8 CODE 0 1B3 1B3 B 2
+text9 CODE 0 15A 15A 1F 2
+text10 CODE 0 179 179 1E 2
+nvBANK0 BANK0 1 4E 4E A 1
+maintext CODE 0 28 28 48 2
+cstackCOMMON COMMON 1 79 79 4 1
+cstackBANK0 BANK0 1 58 58 1 1
+intentry CODE 0 4 4 E 2
+bssBANK0 BANK0 1 20 20 2E 1
+strings STRING 0 B2 B2 3D 2
+clrtext CODE 0 1C8 1C8 8 2
+bssCOMMON COMMON 1 70 70 9 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 59-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 59-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 1D4-1FFF 2
+ENTRY 3-3 2
+ENTRY 1D4-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 1D4-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 1D4-1FFF 2
+STRING 3-3 2
+STRING 1D4-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\WateringSystem.X.production.obj
+15 cinit CODE >374:C:\Users\rs\AppData\Local\Temp\so0.
+15 cinit CODE >377:C:\Users\rs\AppData\Local\Temp\so0.
+15 cinit CODE >454:C:\Users\rs\AppData\Local\Temp\so0.
+16 cinit CODE >455:C:\Users\rs\AppData\Local\Temp\so0.
+17 cinit CODE >456:C:\Users\rs\AppData\Local\Temp\so0.
+18 cinit CODE >457:C:\Users\rs\AppData\Local\Temp\so0.
+1D cinit CODE >460:C:\Users\rs\AppData\Local\Temp\so0.
+1E cinit CODE >461:C:\Users\rs\AppData\Local\Temp\so0.
+1F cinit CODE >462:C:\Users\rs\AppData\Local\Temp\so0.
+20 cinit CODE >463:C:\Users\rs\AppData\Local\Temp\so0.
+21 cinit CODE >464:C:\Users\rs\AppData\Local\Temp\so0.
+24 cinit CODE >470:C:\Users\rs\AppData\Local\Temp\so0.
+24 cinit CODE >472:C:\Users\rs\AppData\Local\Temp\so0.
+25 cinit CODE >473:C:\Users\rs\AppData\Local\Temp\so0.
+4 intentry CODE >269:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+179 text10 CODE >269:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+179 text10 CODE >272:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+17B text10 CODE >273:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+17D text10 CODE >274:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+17E text10 CODE >275:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+184 text10 CODE >276:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+18A text10 CODE >280:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+18B text10 CODE >303:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+18C text10 CODE >305:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+15A text9 CODE >166:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+15A text9 CODE >167:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+15D text9 CODE >168:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+160 text9 CODE >170:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+162 text9 CODE >173:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+168 text9 CODE >174:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+16C text9 CODE >175:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+170 text9 CODE >176:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+174 text9 CODE >177:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+178 text9 CODE >179:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1B3 text8 CODE >311:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1B3 text8 CODE >312:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1BB text8 CODE >314:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1BC text8 CODE >315:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1BD text8 CODE >316:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1D0 text7 CODE >318:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1D0 text7 CODE >319:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1D3 text7 CODE >320:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1BE text6 CODE >261:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1BE text6 CODE >263:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1C4 text6 CODE >264:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1C7 text6 CODE >265:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+12A text5 CODE >248:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+12A text5 CODE >249:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+135 text5 CODE >250:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+13E text5 CODE >251:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+147 text5 CODE >252:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+150 text5 CODE >253:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+159 text5 CODE >254:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1A7 text4 CODE >229:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1A7 text4 CODE >230:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1B2 text4 CODE >238:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+197 text3 CODE >214:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+197 text3 CODE >215:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+198 text3 CODE >216:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+198 text3 CODE >217:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+19A text3 CODE >223:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+19B text3 CODE >215:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1A6 text3 CODE >224:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+EF text2 CODE >182:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+EF text2 CODE >185:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+F3 text2 CODE >186:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+F7 text2 CODE >187:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+FB text2 CODE >188:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+FF text2 CODE >191:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+101 text2 CODE >192:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+105 text2 CODE >193:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+109 text2 CODE >194:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+10D text2 CODE >197:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+10F text2 CODE >198:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+113 text2 CODE >199:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+117 text2 CODE >200:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+11B text2 CODE >203:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+11D text2 CODE >204:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+121 text2 CODE >205:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+125 text2 CODE >206:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+129 text2 CODE >208:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+70 text1 CODE >326:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+70 text1 CODE >328:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+77 text1 CODE >330:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+7D text1 CODE >331:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+7F text1 CODE >334:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+84 text1 CODE >336:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+8A text1 CODE >337:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+8C text1 CODE >340:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+91 text1 CODE >342:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+99 text1 CODE >343:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+9B text1 CODE >346:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+A2 text1 CODE >348:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+A4 text1 CODE >349:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+AA text1 CODE >351:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+AF text1 CODE >353:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+28 maintext CODE >121:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+28 maintext CODE >122:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+2D maintext CODE >123:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+32 maintext CODE >124:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+37 maintext CODE >125:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+3C maintext CODE >131:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+41 maintext CODE >138:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+48 maintext CODE >139:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+4D maintext CODE >140:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+52 maintext CODE >141:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+56 maintext CODE >148:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+60 maintext CODE >149:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+62 maintext CODE >151:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+64 maintext CODE >152:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+66 maintext CODE >153:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+68 maintext CODE >154:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+6A maintext CODE >158:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+6F maintext CODE >128:C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+1C8 clrtext CODE >441:C:\Users\rs\AppData\Local\Temp\so0.
+1C8 clrtext CODE >442:C:\Users\rs\AppData\Local\Temp\so0.
+1C9 clrtext CODE >443:C:\Users\rs\AppData\Local\Temp\so0.
+1C9 clrtext CODE >444:C:\Users\rs\AppData\Local\Temp\so0.
+1CA clrtext CODE >445:C:\Users\rs\AppData\Local\Temp\so0.
+1CB clrtext CODE >446:C:\Users\rs\AppData\Local\Temp\so0.
+1CC clrtext CODE >447:C:\Users\rs\AppData\Local\Temp\so0.
+1CD clrtext CODE >448:C:\Users\rs\AppData\Local\Temp\so0.
+1CE clrtext CODE >449:C:\Users\rs\AppData\Local\Temp\so0.
+1CF clrtext CODE >450:C:\Users\rs\AppData\Local\Temp\so0.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__size_of_UpdateTimeCounters 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_bootDONE 78 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
+_Z1 38 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+_Z2 30 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+_Z3 28 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+_Z4 20 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_INTF 59 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_T0IE 5D 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_T0IF 5A 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_TMR0 1 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\rs\AppData\Local\Temp\so0.obj
+_main 50 0 CODE 0 maintext dist/default/production\WateringSystem.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+start 24 0 CODE 0 init C:\Users\rs\AppData\Local\Temp\so0.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_LedProcess 2B4 0 CODE 0 text5 dist/default/production\WateringSystem.X.production.obj
+_timer20ms 40 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\rs\AppData\Local\Temp\so0.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__size_of_HardwareConfiguration 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+_InitTimer0 366 0 CODE 0 text8 dist/default/production\WateringSystem.X.production.obj
+_Init1msecTimerInterrupt 3A0 0 CODE 0 text7 dist/default/production\WateringSystem.X.production.obj
+__end_of_Init1msecTimerInterrupt 3A8 0 CODE 0 text7 dist/default/production\WateringSystem.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__end_of_MENU_ESTADO 1CA 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+_INTCON B 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_OPTION_REG 81 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_LED_ON 56 0 BANK0 1 nvBANK0 dist/default/production\WateringSystem.X.production.obj
+_LED_Z1 54 0 BANK0 1 nvBANK0 dist/default/production\WateringSystem.X.production.obj
+_LED_Z2 52 0 BANK0 1 nvBANK0 dist/default/production\WateringSystem.X.production.obj
+_LED_Z3 50 0 BANK0 1 nvBANK0 dist/default/production\WateringSystem.X.production.obj
+_LED_Z4 4E 0 BANK0 1 nvBANK0 dist/default/production\WateringSystem.X.production.obj
+__end_of_MENU_HUMIDADE 182 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+start_initialization 2A 0 CODE 0 cinit dist/default/production\WateringSystem.X.production.obj
+__end_of_InitTimer0 37C 0 CODE 0 text8 dist/default/production\WateringSystem.X.production.obj
+__end_of_MENU_MANUAL 1B0 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+clear_ram0 390 0 CODE 0 clrtext dist/default/production\WateringSystem.X.production.obj
+__pcstackBANK0 58 0 BANK0 1 cstackBANK0 dist/default/production\WateringSystem.X.production.obj
+__size_of_SoftwareConfiguration 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\rs\AppData\Local\Temp\so0.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 50 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 16E 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__size_of_LedProcess 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+_hrCounter 44 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 2A 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+_wateringSTATES 77 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 4E 0 BANK0 1 nvBANK0 dist/default/production\WateringSystem.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_ISR 2F2 0 CODE 0 text10 dist/default/production\WateringSystem.X.production.obj
+_RB1 31 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RB2 32 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RB3 33 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RB4 34 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RD0 40 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RD1 41 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RD2 42 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RD3 43 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_RD4 44 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__size_of_ProcessMENUStates 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__end_of_ProcessWATERINGStates 34E 0 CODE 0 text3 dist/default/production\WateringSystem.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__end_of_MENU_DURACAO 194 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+__end_of_ISR 32E 0 CODE 0 text10 dist/default/production\WateringSystem.X.production.obj
+__end_of_MENU_CONFIGURACOES 1BE 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 164 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+_ProcessWATERINGStates 32E 0 CODE 0 text3 dist/default/production\WateringSystem.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\rs\AppData\Local\Temp\so0.obj
+_InitExternal_INT 37C 0 CODE 0 text6 dist/default/production\WateringSystem.X.production.obj
+_menuSTATES 76 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_MENU_LIGAR 1A2 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+__end_of_UpdateTimeCounters 164 0 CODE 0 text1 dist/default/production\WateringSystem.X.production.obj
+__ptext10 2F2 0 CODE 0 text10 dist/default/production\WateringSystem.X.production.obj
+_minCounter 70 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
+__pmaintext 50 0 CODE 0 maintext dist/default/production\WateringSystem.X.production.obj
+__end_of_MENU_HORA 1D4 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+__end_of_MENU_ZONA 1DE 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+_msCounter 74 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__size_of_InitTimer0 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_UpdateTimeCounters E0 0 CODE 0 text1 dist/default/production\WateringSystem.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\rs\AppData\Local\Temp\so0.obj
+stacklo 0 0 ABS 0 - C:\Users\rs\AppData\Local\Temp\so0.obj
+__end_of_HardwareConfiguration 2F2 0 CODE 0 text9 dist/default/production\WateringSystem.X.production.obj
+__end_of__stringtab 170 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 24 0 CODE 0 end_init -
+__size_of_Init1msecTimerInterrupt 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 48 0 CODE 0 cinit dist/default/production\WateringSystem.X.production.obj
+__end_of_ProcessMENUStates 366 0 CODE 0 text4 dist/default/production\WateringSystem.X.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+_secCounter 72 0 COMMON 1 bssCOMMON dist/default/production\WateringSystem.X.production.obj
+_HardwareConfiguration 2B4 0 CODE 0 text9 dist/default/production\WateringSystem.X.production.obj
+__end_of_InitExternal_INT 390 0 CODE 0 text6 dist/default/production\WateringSystem.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__size_of_InitExternal_INT 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__ptext1 E0 0 CODE 0 text1 dist/default/production\WateringSystem.X.production.obj
+__ptext2 1DE 0 CODE 0 text2 dist/default/production\WateringSystem.X.production.obj
+__ptext3 32E 0 CODE 0 text3 dist/default/production\WateringSystem.X.production.obj
+__ptext4 34E 0 CODE 0 text4 dist/default/production\WateringSystem.X.production.obj
+__ptext5 254 0 CODE 0 text5 dist/default/production\WateringSystem.X.production.obj
+__ptext6 37C 0 CODE 0 text6 dist/default/production\WateringSystem.X.production.obj
+__ptext7 3A0 0 CODE 0 text7 dist/default/production\WateringSystem.X.production.obj
+__ptext8 366 0 CODE 0 text8 dist/default/production\WateringSystem.X.production.obj
+__ptext9 2B4 0 CODE 0 text9 dist/default/production\WateringSystem.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__end_of__initialization 48 0 CODE 0 cinit dist/default/production\WateringSystem.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 79 0 COMMON 1 cstackCOMMON dist/default/production\WateringSystem.X.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+__end_of_main E0 0 CODE 0 maintext dist/default/production\WateringSystem.X.production.obj
+_ProcessMENUStates 34E 0 CODE 0 text4 dist/default/production\WateringSystem.X.production.obj
+_PORTD 8 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_TRISD 88 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\WateringSystem.X.production.obj
+__end_of_SoftwareConfiguration 254 0 CODE 0 text2 dist/default/production\WateringSystem.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\WateringSystem.X.production.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__initialization 2A 0 CODE 0 cinit dist/default/production\WateringSystem.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+__pstrings 164 0 STRING 0 strings dist/default/production\WateringSystem.X.production.obj
+__size_of_ProcessWATERINGStates 0 0 ABS 0 - dist/default/production\WateringSystem.X.production.obj
+_SoftwareConfiguration 1DE 0 CODE 0 text2 dist/default/production\WateringSystem.X.production.obj
+_LedProcess 254 0 CODE 0 text5 dist/default/production\WateringSystem.X.production.obj
+_dayCounter 42 0 BANK0 1 bssBANK0 dist/default/production\WateringSystem.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text2 0 EF 1DE E5 2
+intentry 0 4 8 AE 2
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 39 1
+strings 0 B2 164 3D 2
+bssCOMMON 1 70 70 D 1
+config 0 2007 400E 1 2

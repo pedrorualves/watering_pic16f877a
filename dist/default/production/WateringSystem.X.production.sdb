@@ -1,0 +1,177 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"116 C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+[e E1104 . `uc
+WATERING_SETUP 0
+WATERING_IDLE 1
+WATERING_ON 2
+]
+"117
+[e E1109 . `uc
+FIRST_MENU 0
+MANUAL_MENU 1
+CONFIG_MENU 2
+]
+"62 E:\Program Files\Microchip\xc8\v1.44\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 E:\Program Files\Microchip\xc8\v1.44\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 E:\Program Files\Microchip\xc8\v1.44\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"121 C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+[v _main main `(i  1 e 2 0 ]
+"166
+[v _HardwareConfiguration HardwareConfiguration `(v  1 e 1 0 ]
+"182
+[v _SoftwareConfiguration SoftwareConfiguration `(v  1 e 1 0 ]
+"214
+[v _ProcessWATERINGStates ProcessWATERINGStates `(v  1 e 1 0 ]
+"229
+[v _ProcessMENUStates ProcessMENUStates `(v  1 e 1 0 ]
+"248
+[v _LedProcess LedProcess `(v  1 e 1 0 ]
+"261
+[v _InitExternal_INT InitExternal_INT `(v  1 e 1 0 ]
+"269
+[v _ISR ISR `II(v  1 e 1 0 ]
+"311
+[v _InitTimer0 InitTimer0 `(v  1 e 1 0 ]
+"318
+[v _Init1msecTimerInterrupt Init1msecTimerInterrupt `(v  1 e 1 0 ]
+"326
+[v _UpdateTimeCounters UpdateTimeCounters `(v  1 e 1 0 ]
+"57 E:\Program Files\Microchip\xc8\v1.44\include\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"338
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"452
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"1253
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1373
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1497
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2501
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2525
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2573
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2575
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2577
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"2579
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"2621
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2623
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2625
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2627
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2629
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2687
+[v _T0IE T0IE `VEb  1 e 0 @93 ]
+"2689
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+[s S19 . 8 `ui 1 enable 2 0 `ui 1 beginTIME 2 2 `ui 1 duration 2 4 `ui 1 humidityLIMIT 2 6 ]
+"89 C:\Users\rs\MPLABXProjects\WateringSystem.X\WateringSystem.c
+[v _Z1 Z1 `S19  1 e 8 0 ]
+"90
+[v _Z2 Z2 `S19  1 e 8 0 ]
+"91
+[v _Z3 Z3 `S19  1 e 8 0 ]
+"92
+[v _Z4 Z4 `S19  1 e 8 0 ]
+"95
+[v _bootDONE bootDONE `uc  1 e 1 0 ]
+"97
+[v _LED_ON LED_ON `i  1 e 2 0 ]
+"98
+[v _LED_Z1 LED_Z1 `i  1 e 2 0 ]
+"99
+[v _LED_Z2 LED_Z2 `i  1 e 2 0 ]
+"100
+[v _LED_Z3 LED_Z3 `i  1 e 2 0 ]
+"101
+[v _LED_Z4 LED_Z4 `i  1 e 2 0 ]
+"108
+[v _msCounter msCounter `ui  1 e 2 0 ]
+"109
+[v _secCounter secCounter `ui  1 e 2 0 ]
+"110
+[v _minCounter minCounter `ui  1 e 2 0 ]
+"111
+[v _hrCounter hrCounter `ui  1 e 2 0 ]
+"112
+[v _dayCounter dayCounter `ui  1 e 2 0 ]
+"114
+[v _timer20ms timer20ms `ui  1 e 2 0 ]
+"116
+[v _wateringSTATES wateringSTATES `E1104  1 e 1 0 ]
+"117
+[v _menuSTATES menuSTATES `E1109  1 e 1 0 ]
+"121
+[v _main main `(i  1 e 2 0 ]
+{
+"163
+} 0
+"326
+[v _UpdateTimeCounters UpdateTimeCounters `(v  1 e 1 0 ]
+{
+"355
+} 0
+"182
+[v _SoftwareConfiguration SoftwareConfiguration `(v  1 e 1 0 ]
+{
+"208
+} 0
+"214
+[v _ProcessWATERINGStates ProcessWATERINGStates `(v  1 e 1 0 ]
+{
+"224
+} 0
+"229
+[v _ProcessMENUStates ProcessMENUStates `(v  1 e 1 0 ]
+{
+"238
+} 0
+"248
+[v _LedProcess LedProcess `(v  1 e 1 0 ]
+{
+"254
+} 0
+"261
+[v _InitExternal_INT InitExternal_INT `(v  1 e 1 0 ]
+{
+"265
+} 0
+"318
+[v _Init1msecTimerInterrupt Init1msecTimerInterrupt `(v  1 e 1 0 ]
+{
+"320
+} 0
+"311
+[v _InitTimer0 InitTimer0 `(v  1 e 1 0 ]
+{
+"316
+} 0
+"166
+[v _HardwareConfiguration HardwareConfiguration `(v  1 e 1 0 ]
+{
+"179
+} 0
+"269
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"305
+} 0
